@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Landing Page for New Book Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        .topnav1 {
+            height: 70px;
+            background: url(image1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+        
+        .nav-design {
+            border-left: 2px white;
+            height: 15vh;
+            margin-top: -15px;
+            box-shadow: 0px 0px 30px 10px seashell;
+            position: absolute;
+            display: flex;
+            animation: ssss 10s infinite;
+        }
+        
+        @keyframes ssss {
+            from {
+                left: -5%;
+                transform: rotate(45deg);
+                display: flex;
+                z-index: 0;
+            }
+            to {
+                left: 103%;
+                z-index: 0;
+                transform: rotate(45deg);
+                display: flex;
+                overflow-x: hidden;
+            }
+        }
+        
+        .text-color {
+            color: white;
+            padding: 10px;
+        }
+        
+        .topnav2 {
+            background-color: grey;
+            height: 40px;
+            width: 100%;
+            text-align: right;
+            display: inline-block;
+        }
+        
+        .a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 10px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            z-index: 1;
+            margin-top: 3px;
+            text-align: center;
+        }
+        
+        .active {
+            width: 68px;
+            height: 3px;
+            background-color: yellow;
+            margin-top: -4px;
+            border-radius: 5px;
+            display: flex;
+            z-index: 2;
+            transition: transform 1s;
+            margin-left: 662px;
+        }
+        
+        .a:nth-child(1) {
+            width: 50px;
+            text-align: center;
+        }
+        
+        .a:nth-child(2) {
+            width: 50px;
+            text-align: center;
+        }
+        
+        .a:nth-child(3) {
+            width: 70px;
+            text-align: center;
+        }
+        
+        .a:nth-child(4) {
+            width: 55px;
+            text-align: center;
+        }
+        
+        .a:nth-child(5) {
+            width: 150px;
+            text-align: center;
+        }
+        
+        .a:nth-child(6) {
+            width: 87px;
+            text-align: center;
+        }
+        
+        .a:nth-child(1):hover~.active {
+            transform: translateX(0);
+        }
+        
+        .a:nth-child(2):hover~.active {
+            transform: translateX(74px);
+            width: 69px;
+        }
+        
+        .a:nth-child(3):hover~.active {
+            transform: translateX(148px);
+            width: 90px;
+        }
+        
+        .a:nth-child(4):hover~.active {
+            transform: translateX(242px);
+            width: 75px;
+        }
+        
+        .a:nth-child(5):hover~.active {
+            transform: translateX(322px);
+            width: 168px;
+        }
+        
+        .a:nth-child(6):hover~.active {
+            transform: translateX(495px);
+            width: 103px;
+        }
+        
+        .bg {
+            background-image: url(image3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        
+        .grid-i {
+            padding-top: 270px;
+        }
+        
+        .row {
+            content: "";
+            display: table;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 20px;
+            border: 2px solid black;
+            width: 100px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            transition: transform .2s;
+        }
+        
+        .button:hover {
+            transform: scale(1.1);
+        }
+        
+        .grid-heading {
+            display: grid;
+            grid-template-columns: 40% 20% 40%;
+        }
+        
+        hr.hr1 {
+            position: relative;
+            top: 10px;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 50px;
+        }
+        
+        .grid-right-image {
+            display: grid;
+            grid-template-columns: 15% 45% 25% 15%;
+        }
+        
+        .grid-left-image {
+            display: grid;
+            grid-template-columns: 15% 30% 45% 10%;
+        }
+        
+        .grid-break {
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+        }
+        
+        .checked {
+            color: gold;
+        }
+        
+        .button-see-details {
+            background-color: green;
+            border: none;
+            color: black;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 140px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            transition: all .2s ease-in-out;
+        }
+        
+        .button-see-details:hover {
+            background-color: gold;
+        }
+        
+        .grid-our-products {
+            display: grid;
+            grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
+        }
+        
+        .grid-item-our-products {
+            border-style: ridge;
+        }
+        
+        .grid-latest-books {
+            display: grid;
+            grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
+        }
+        
+        .bg1 {
+            background-image: url(image15.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        .grid-bg1 {
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
+        
+        .bg-footer {
+            height: 50vh;
+            background: url(image1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: center;
+        }
+        
+        .grid-footer {
+            display: grid;
+            grid-template-columns: 5% 25% 5% 25% 5% 30% 5%;
+            color: white;
+        }
+        
+        .btn {
+            width: 150px;
+            background-color: tomato;
+            padding: 5px;
+            border-color: 2px solid black;
+            cursor: pointer;
+        }
+        
+        .footer-btn {
+            margin-left: 20%;
+        }
+        
+        .footer-hr {
+            width: 70px;
+            margin-top: 10px;
+            background-color: yellow;
+            border-color: yellow;
+        }
+        
+        .footer-f {
+            background-color: black;
+            border-color: black;
+            width: 80%;
+            text-align: center;
+        }
+        
+        .ff {
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            border-radius: 27px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .tt {
+            width: 30px;
+            height: 30px;
+            background-color: #00ABE3;
+            color: white;
+            text-align: center;
+            border-radius: 27px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .ii {
+            width: 30px;
+            height: 30px;
+            background-color: #e72828;
+            color: white;
+            text-align: center;
+            border-radius: 27px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .button-btn {
+            cursor: pointer;
+            background-color: green;
+            padding: 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 5px;
+        }
+        
+        .s1 {
+            animation: sss 1s;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes sss {
+            0% {
+                margin-top: -250px;
+            }
+            40% {
+                margin-top: 0px;
+            }
+            60% {
+                margin-top: -40px;
+            }
+            75% {
+                margin-top: 0px;
+            }
+            90% {
+                margin-top: -10px;
+            }
+            100% {
+                margin-top: 0px;
+            }
+        }
+        
+        .book-image {
+            transition: transform 1s;
+        }
+        
+        .book-image:hover {
+            transform: scale(1.1);
+        }
+        
+        .button-btn:hover {
+            background-color: gold;
+            transform: scale(1.1);
+        }
+        
+        .grid-ani-image-right {
+            animation: grid-ani-image 2s;
+        }
+        
+        @keyframes grid-ani-image {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .grid-ani-image-left {
+            animation: grid-ani-image2 2s;
+        }
+        
+        @keyframes grid-ani-image2 {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="topnav1">
+        <h1 class="text-color" style="font-size: 40px;">ABC Book Shop</h1>
+        <div class="nav-design"></div>
+    </nav>
+    <nav class="topnav2">
+        <a class="a" href="#" style="text-decoration: none;color: black;">Home</a>
+        <a class="a" href="#" style="text-decoration: none;">Book</a>
+        <a class="a" href="#" style="text-decoration: none;">Author</a>
+        <a class="a" href="#" style="text-decoration: none;">Login</a>
+        <a class="a" href="#" style="text-decoration: none;">Create Account</a>
+        <a class="a" href="#" style="text-decoration: none;">Near You</a>
+        <div class="active"></div>
+    </nav>
+    <div class="bg">
+        <div class="grid-container">
+
+            <div class="grid-item">
+
+            </div>
+            <div class="grid-i">
+                <div class="grid-container">
+                    <div align="right"></div>
+                    <div class="s1">
+                        <h1 style="color:white;font-weight: 1000;"><i>Reading gives us<br>someplace to go<br>when we have to<br>stay where we are.</i></h1>
+                        <br><br>
+                        <button class="button" type="submit">Buy Books</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br><br>
+        <div class="grid-heading">
+            <div>
+                <hr class="hr1">
+            </div>
+            <div align="center">
+                <h3><i>Offers</i></h3>
+            </div>
+            <div>
+                <hr class="hr1">
+            </div>
+        </div>
+        <div>
+            <div class="grid-right-image grid-ani-image-right">
+                <div></div>
+                <div align="left">
+                    <table>
+                        <tr align="left">
+                            <th>
+                                <h3>Title</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p>
+                                    Practical English Usage
+                                </p>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>Book Description</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p>Michael Swan's Guide to problems in English<br>(Practical English Usage, 4th edition)</p>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>Author Name</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p>Michael Swan</p>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>Rating</h3>
+                            </th>
+                            <th>:</th>
+                            <th>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </th>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>Offer</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p style="color: green;"><i>20%</i></p>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>MRP</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p style="color: green;">
+                                    <s style="color: red;"><span>&#8377;</span>438.00</s> <span>&#8377;</span>350.40
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="button-see-details">See Details & Buy</button>
+                </div>
+                <div align="center"><img src="image6.jpg" width="150px"></div>
+                <div></div>
+            </div>
+            <br>
+            <div class="grid-break">
+                <div></div>
+                <div>
+                    <hr>
+                </div>
+                <div></div>
+
+            </div>
+            <br>
+            <div class="grid-left-image grid-ani-image-left">
+                <div></div>
+                <div align="left"><img src="image5.jpg" width="150px"></div>
+                <div align="left">
+                    <table>
+                        <tr align="left">
+                            <th>
+                                <h3>Title</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p>
+                                    English Grammar in Use
+                                </p>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>Book Description</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p>A Self Study Reference and Practice Book Intermediate Learners Book.</p>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>Author Name</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p>Murphy</p>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>Rating</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>Offer</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p style="color: green;"><i>10%</i></p>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                                <h3>MRP</h3>
+                            </th>
+                            <th>:</th>
+                            <td>
+                                <p style="color: green;">
+                                    <s style="color: red;"><span>&#8377;</span>549.00</s> <span>&#8377;</span>494.10
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="button-see-details">See Details & Buy</button>
+                </div>
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <br><br>
+        <div class="grid-heading">
+            <div>
+                <hr class="hr1">
+            </div>
+            <div align="center">
+                <h3><i>Our Products</i></h3>
+            </div>
+            <div>
+                <hr class="hr1">
+            </div>
+        </div>
+        <br>
+        <div class="grid-our-products">
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image7.jpg" width="50%">
+                <div>
+                    <p><b>Article 370</b><br> Explained for the Common Man Paperback – 6 January 2020 by Sumit Dutt Majumder (Author)</p>
+                </div>
+                <br>
+                <button class="button-btn book-button">Buy</button>
+                <br><br>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image8.jpg" width="55%">
+                <div>
+                    <p><b>The Article Book</b><br> Practice Toward Mastering<br> a, an, and the Paperback by<br> Tom Cole (Author)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image9.jpg" width="50%">
+                <div>
+                    <p><b>Facts and Law<br> on<br> Article 370 & 35A</b><br> by Monika Arora (Author)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+            </div>
+
+            <div style="margin-top: 100%;" align="center">
+                <a href="#">See More>></a>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <br><br>
+        <div class="grid-heading">
+            <div>
+                <hr class="hr1">
+            </div>
+            <div align="center">
+                <h3><i>Latest Books</i></h3>
+            </div>
+            <div>
+                <hr class="hr1">
+            </div>
+        </div>
+        <br>
+        <div class="grid-latest-books">
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image10.jpeg" width="50%">
+                <div>
+                    <p><b>You are the Best Friend<br> -<br> A True Love Story</b><br> (English, Paperback, Pandey Ajay K.)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+                <br><br>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image11.jpeg" width="50%">
+                <div>
+                    <p><b>THE HOUSE OF STRANGE STORIES</b><br>by Bond Ruskin<br> (English, Paperback, Bond Ruskin)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image8.jpg" width="55%">
+                <div>
+                    <p><b>The Article Book</b><br> Practice Toward Mastering<br> a, an, and the Paperback by<br> Tom Cole (Author)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+            </div>
+            <div></div>
+
+        </div>
+        <br><br><br>
+        <div class="grid-latest-books">
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="imahe12.jpeg" width="50%">
+                <div>
+                    <p><b>The Girl Who Knew Too Much</b><br> - What if the Loved One You Lost Were to Come Back? (English, Paperback, Khanna Vikrant)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+                <br><br>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image13.jpeg" width="50%">
+                <div>
+                    <p><b>Till The Last Breath . . .</b><br>by Datta Durjoy<br> (English, Book, Datta Durjoy)</p>
+                </div>
+                <br><br>
+                <button class="button-btn">Buy</button>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image14.jpeg" width="50%">
+                <div>
+                    <p><b>I Too Had a Love Story </b><br>- 10th anniversary edition <br>(English, SINGH RAVINDER)</p>
+                </div>
+                <br><br>
+                <button class="button-btn">Buy</button>
+            </div>
+            <div></div>
+
+        </div>
+    </div>
+    <br><br>
+    <div class="bg1">
+        <div class="grid-bg1">
+            <div></div>
+            <div style="margin-top: 95%;">
+                <h1 style="border: 2px solid black;">
+                    <i>Take a good book to bed<br> with you - books do not snore.</i>
+                </h1>
+                <br>
+                <button class="button">Buy Books</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br><br>
+        <div class="grid-heading">
+            <div>
+                <hr class="hr1">
+            </div>
+            <div align="center">
+                <h3><i>Best Seller Books</i></h3>
+            </div>
+            <div>
+                <hr class="hr1">
+            </div>
+        </div>
+        <br>
+        <div class="grid-latest-books">
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image9.jpg" width="50%">
+                <div>
+                    <p><b>Facts and Law<br> on<br> Article 370 & 35A</b><br> by Monika Arora (Author)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+                <br><br>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image11.jpeg" width="50%">
+                <div>
+                    <p><b>THE HOUSE OF STRANGE STORIES</b><br>by Bond Ruskin<br> (English, Paperback, Bond Ruskin)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image8.jpg" width="55%">
+                <div>
+                    <p><b>The Article Book</b><br> Practice Toward Mastering<br> a, an, and the Paperback by<br> Tom Cole (Author)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+            </div>
+            <div></div>
+
+        </div>
+        <br><br><br>
+        <div class="grid-latest-books">
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="imahe12.jpeg" width="50%">
+                <div>
+                    <p><b>The Girl Who Knew Too Much</b><br> - What if the Loved One You Lost Were to Come Back? (English, Paperback, Khanna Vikrant)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+                <br><br>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image13.jpeg" width="50%">
+                <div>
+                    <p><b>Till The Last Breath . . .</b><br>by Datta Durjoy<br> (English, Book, Datta Durjoy)</p>
+                </div>
+                <br><br>
+                <button class="button-btn">Buy</button>
+            </div>
+            <div></div>
+            <div class="grid-item-our-products book-image" align="center">
+                <img src="image10.jpeg" width="50%">
+                <div>
+                    <p><b>You are the Best Friend<br> -<br> A True Love Story</b><br> (English, Paperback, Pandey Ajay K.)</p>
+                </div>
+                <br>
+                <button class="button-btn">Buy</button>
+                <br><br>
+            </div>
+            <div></div>
+
+        </div>
+    </div>
+    <br><br>
+    <div class="bg-footer">
+        <div class="grid-footer">
+            <div></div>
+            <div align="left">
+                <br><br>
+                <h3>Company</h3>
+                <hr class="footer-hr">
+                <br>
+                <p style="padding: 5px;">About Us</p>
+                <p style="padding: 5px;">Our Service</p>
+                <p style="padding: 5px;">Privacy Policy</p>
+            </div>
+            <div></div>
+            <div align="left">
+                <br><br>
+                <h3>Address</h3>
+                <hr class="footer-hr">
+                <br>
+                <table>
+                    <tr>
+                        <td><i class="fa fa-map-marker" style="font-size: 24px; margin-right: 30px;padding: 5px;"></i></td>
+                        <td style="font-size: 20px;">Bangalore, Karnataka.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-phone" style="font-size:24px;margin-right: 30px;padding: 5px;"></i></td>
+                        <td align="left" style="font-size: 20px;">+91-9876543210</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-envelope" style="font-size:24px;margin-right: 30px;padding: 5px;"></i></td>
+                        <td align="left" style="font-size: 20px;">abc123@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+            <div></div>
+            <div align="left">
+                <br><br>
+                <h3>Contact</h3>
+                <hr class="footer-hr">
+                <br>
+                <div>
+                    <p>EmailID:</p>
+                    <input type="text" id="user_emailid" size="40" />
+                </div>
+                <br>
+                <div>
+                    <p>Message:</p>
+                    <textarea type="text" rows="3" id="user_message" cols="38"></textarea>
+                </div>
+                <br>
+                <div class="footer-btn">
+                    <button align="center" class="btn">Send</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div align="center">
+            <hr class="footer-f">
+            <h3 style="color: white;">Follow Us:
+                <a href="#" class="fa fa-facebook ff"></a>
+                <a href="#" class="fa fa-twitter tt"></a>
+                <a href="#" class="fa fa-instagram ii"></a>
+
+            </h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
